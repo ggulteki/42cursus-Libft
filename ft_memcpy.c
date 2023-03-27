@@ -1,0 +1,44 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ggulteki <ggulteki@student.42istanbul.com. +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/12/16 17:23:08 by ggulteki          #+#    #+#             */
+/*   Updated: 2023/01/09 17:06:03 by ggulteki         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	char	*i;
+	char	*j;
+
+	i = (char *)dst;
+	j = (char *)src;
+	if (!src && !dst)
+		return (0);
+	while (n > 0)
+	{
+		*i = *j;
+		i++;
+		j++;
+		n--;
+	}
+	return (dst);
+}
+/*
+int main(void)
+{
+  char  deneme00[] = "deneme123";
+  char  deneme01[] = "DENEME123";
+
+
+  ft_memcpy(deneme00, deneme01, 6);
+
+  puts(deneme00);
+}
+*/
