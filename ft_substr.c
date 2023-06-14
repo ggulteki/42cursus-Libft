@@ -27,21 +27,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str = (char *)malloc((len + 1) * sizeof(char));
 	if ((!str))
 		return (NULL);
-	while (i < len && s[start + i])
+	while (i < len && *(s + start + i))
 	{
-		str[i] = s[start + i];
+		*(str + i) = *(s + start + i);
 		i++;
 	}
-	str[i] = '\0';
+	*(str + i) = '\0';
 	return (str);
 }
-/*
-int	main(void)
-{
-	char	*s1 = "deneme";
-	int		index = 2;
-	int		len1 = 4;
-
-	printf("%s\n", ft_substr(s1, index, len1));
-}
-*/

@@ -23,21 +23,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		return (0);
 	if (i >= dstsize)
 		return (ft_strlen(src) + dstsize);
-	while (src[j] && (i + j) < (dstsize - 1))
+	while (*(src + j) && (i + j) < (dstsize - 1))
 	{
-		dst[i + j] = src[j];
+		*(dst + i + j) = *(src + j);
 		j++;
 	}
-	dst[i + j] = '\0';
+	*(dst + i + j) = '\0';
 	return (i + ft_strlen(src));
 }
-/*
-int main(void)
-{
-	char	s1[] = "gokberk";
-	char	s2[] = "gultekin";
-
-	ft_strlcat(s1, s2, 16);
-	puts(s1);
-}
-*/

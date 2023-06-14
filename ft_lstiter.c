@@ -22,20 +22,3 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
-/*
-void	myfunc(void func)
-{
-	printf("%s\n", func);
-}
-
-int	main(void)
-{
-	t_list	*node1;
-	t_list	*node2;
-
-	node1 = ft_lstnew("deneme");
-	node2 = ft_lstnew("DENEME");
-	node1->next = node2;
-	ft_lstiter(node1, myfunc);
-}
-*/

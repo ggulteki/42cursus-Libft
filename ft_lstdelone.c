@@ -23,18 +23,3 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 	(*del)(temp->content);
 	free(temp);
 }
-/*
-void	del(void* del)
-{
-	free(del);
-
-}
-
-int	main(void)
-{
-	t_list	*node1;
-
-	node1 = ft_lstnew("deneme");
-	ft_lstdelone(node1, del);
-}
-*/

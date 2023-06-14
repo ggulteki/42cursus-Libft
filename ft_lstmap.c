@@ -31,31 +31,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f) (void *), void (*del)(void *))
 	}
 	return (tmp);
 }
-/*
-void    *f(void *s)
-{
-    return(s);
-}
-void    del(void *s)
-{
-    s = 0;
-	free s;
-}
-void iter(void *s)
-{
-    printf("%s\n", (char *)s);
-}
-
-int	main(void)
-{
-	t_list	*node1;
-	t_list	*node2;
-	t_list	*node3;
-
-	node1 = ft_lstnew("deneme1");
-	node2 = ft_lstnew("deneme2");
-	ft_lstadd_back(&node1, node2);
-	node3 = ft_lstmap(node1, f, del);
-	ft_lstiter(node3, iter);
-}
-*/

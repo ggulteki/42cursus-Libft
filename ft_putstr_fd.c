@@ -23,12 +23,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-/*
-int	main(void)
-{
-	char	*s1 = "deneme";
-	int	fd = 1;
-
-	ft_putstr_fd(s1, 1);
-}
-*/

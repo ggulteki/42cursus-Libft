@@ -19,21 +19,9 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	if (!s || !f)
 		return ;
 	i = 0;
-	while (s[i] != '\0')
+	while (*(s + i) != '\0')
 	{
 		f(i, s + i);
 		i++;
 	}
 }
-/*
-void	myfunc(unsigned int i, char *str)
-{
-	printf("%s\n", str);
-}
-
-int	main(void)
-{
-	char	*s1 = "deneme";
-	ft_striteri(s1, myfunc);
-}
-*/

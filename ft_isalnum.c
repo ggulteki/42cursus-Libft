@@ -19,15 +19,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	char fortest00 = 'G';
-	char fortest01 = '3';
-	char fortest02 = ' ';
-
-	printf("%d\n", ft_isalnum(fortest00));
-	printf("%d\n", ft_isalnum(fortest01));
-	printf("%d\n", ft_isalnum(fortest02));
-}
-*/

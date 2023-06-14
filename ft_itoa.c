@@ -29,12 +29,12 @@ static void	ft_str_reverse(char *str)
 	i = 0;
 	while (i < len / 2)
 	{
-		temp = str[i];
-		str[i] = str[len - i - 1];
-		str[len - i - 1] = temp;
+		temp = *(str + i);
+		*(str + i) = *(str + len - i - 1);
+		*(str + len - i - 1) = temp;
 		i++;
 	}
-	str[len] = 0;
+	*(str + len) = 0;
 }
 
 static int	count_digit(long long n)
@@ -56,21 +56,14 @@ char	*ft_itoa(int n)
 	if (!str)
 		return (NULL);
 	if (n == 0)
-		str[0] = '0';
+		*str = '0';
 	while (n != 0)
 	{
-		str[len++] = '0' + ft_abs(n % 10);
+		*(str + len++) = '0' + ft_abs(n % 10);
 		n = (n / 10);
 	}
 	if (neg_true)
-		str[len] = '-';
+		*(str + len) = '-';
 	ft_str_reverse(str);
 	return (str);
 }
-/*
-int	main(void)
-{
-	int	num = 2023;
-	printf("%s\n", ft_itoa(num));
-}
-*/

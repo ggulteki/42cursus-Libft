@@ -19,13 +19,3 @@ int	ft_isdigit(int x)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	char fortest00 = '3';
-	char fortest01 = 'G';
-
-	printf("%d\n", ft_isdigit(fortest00));
-	printf("%d\n", ft_isdigit(fortest01));
-}
-*/

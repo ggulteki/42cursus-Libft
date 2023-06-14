@@ -25,13 +25,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-/*
-int main(void)
-{
-  char  s1[] = "deneme";
-  char c = 'a';
-  size_t len = 2;
-
-  ft_memset(s1, c, len);
-}
-*/

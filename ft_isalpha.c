@@ -19,13 +19,3 @@ int	ft_isalpha(int x)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	char fortest00 = 'G';
-	char fortest01 = '3';
-
-	printf("%d\n", ft_isalpha(fortest00));
-	printf("%d\n", ft_isalpha(fortest01));
-}
-*/

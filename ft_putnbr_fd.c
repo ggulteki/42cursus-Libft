@@ -29,12 +29,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(n + '0', fd);
 }
-/*
-int	main(void)
-{
-	int	number = 1111;
-	int	fd = 1;
-
-	ft_putnbr_fd(number, fd);
-}
-*/

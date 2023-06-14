@@ -25,12 +25,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(str, s2, ft_strlen(s1) + ft_strlen(s2) + 1);
 	return (str);
 }
-/*
-int	main(void)
-{
-	char	*s1 = "deneme";
-	char	*s2 = "DENEME";
-
-	printf("%s\n", ft_strjoin(s1, s2));
-}
-*/

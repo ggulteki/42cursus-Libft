@@ -19,13 +19,3 @@ int	ft_isprint(int x)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	char fortest00 = 'G';
-	char fortest01 = '	';
-
-	printf("%d\n", ft_isprint(fortest00));
-	printf("%d\n", ft_isprint(fortest01));
-}
-*/

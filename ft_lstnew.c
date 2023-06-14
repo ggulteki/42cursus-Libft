@@ -23,12 +23,3 @@ t_list	*ft_lstnew(void *content)
 	dest->next = NULL;
 	return (dest);
 }
-/*
-int	main(void)
-{
-	t_list	*node1;
-
-	node1 = ft_lstnew("deneme");
-	printf("%s\n", node1->content);
-}
-*/

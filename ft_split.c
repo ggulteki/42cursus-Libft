@@ -50,26 +50,11 @@ char	**ft_split(char const *s, char c)
 			len = 0;
 			while (*s && *s != c && ++len)
 				++s;
-			str[i++] = ft_substr(s - len, 0, len);
+			*(str + i++) = ft_substr(s - len, 0, len);
 		}
 		else
 			++s;
 	}
-	str[i] = 0;
+	*(str + i) = 0;
 	return (str);
 }
-/*
-int	main(void)
-{
-	char	*s1 = "deneme Deneme deneme";
-	char	**words;
-	int		i = 0;
-
-	words = ft_split(s1, ' ');
-	while (*(words + i) != NULL)
-	{
-		printf("%s", *(words + i));
-		i++;
-	}
-}
-*/

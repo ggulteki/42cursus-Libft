@@ -24,21 +24,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		free(temp);
 	}
 }
-/*
-void	del(void* del)
-{
-	free(del);
-}
-
-int	main(void)
-{
-	t_list	*node1;
-	t_list	*node2;
-
-	node1 = ft_lstnew("deneme");
-	node2 = ft_lstnew("DENEME");
-	node1->next = node2;
-	ft_lstclear(&node1, del);
-
-}
-*/
